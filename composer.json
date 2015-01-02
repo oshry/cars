@@ -1,0 +1,23 @@
+{
+    "name": "oshry/cars",
+    "description": "cars API",
+    "require": {
+        "swiftmailer/swiftmailer": "~5.3",
+        "league/climate": "~2.5",
+        "mustache/mustache": "2.7.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.1"
+    },
+    "authors": [
+        {
+            "name": "Oshry Levy",
+            "email": "oshrylevy@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Cars\\": "src/"
+        }
+    }
+}
