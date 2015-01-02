@@ -1,10 +1,6 @@
 <?php
 namespace Cars\Usecase\Cars\Process;
 
-use Cars\Entity;
-use Cars\Repository;
-use Cars\Usecase\Cars\Process;
-
 class UpdateCar extends ProcessBase{
     public function update_car($id){
         parse_str(file_get_contents("php://input"),$post_vars);

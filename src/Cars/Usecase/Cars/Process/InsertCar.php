@@ -1,8 +1,6 @@
 <?php
 namespace Cars\Usecase\Cars\Process;
 
-use Cars\Entity;
-use Cars\Repository;
 
 class InsertCar extends ProcessBase{
     public function insert_car(){

@@ -1,9 +1,6 @@
 <?php
 namespace Cars\Usecase\Cars\Process;
 
-use Cars\Entity;
-use Cars\Repository;
-
 class ListCars extends ProcessBase{
     public function list_cars()
     {
