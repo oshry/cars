@@ -1,5 +1,4 @@
 <?php
-//die('sdsd');
 require '../vendor/autoload.php';
 
 ini_set('auto_detect_line_endings', true);
@@ -16,15 +15,6 @@ $path = $_SERVER['REQUEST_URI'];
 $paths = explode("/", $path);
 if(!$paths[0])
     array_shift($paths);
-/*try{
-    //throw new Exception("cant add model m");
-    throw new Exception("Value must be 1 or below");
-}catch(Exception $e){
-    echo 'Message: ' .$e->getMessage();
-    //header('HTTP/1.1 404 Not Found');
-    //echo "dffdfddffd";
-    die();
-}*/
 try {
     if ($paths[0] == 'cars') {
         array_shift($paths);
