@@ -4,18 +4,7 @@ namespace Cars\Usecase\Cars\Process;
 use Cars\Entity;
 use Cars\Repository;
 
-class ListCars {
-    protected $car;
-    protected $repo;
-
-    public function __construct(
-        Entity\Car $car,
-        Repository\CarsData $repo
-    )
-    {
-        $this->car = $car;
-        $this->repo = $repo;
-    }
+class ListCars extends ProcessBase{
     public function list_cars()
     {
         $method = $_SERVER['REQUEST_METHOD'];

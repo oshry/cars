@@ -3,19 +3,9 @@ namespace Cars\Usecase\Cars\Process;
 
 use Cars\Entity;
 use Cars\Repository;
+use Cars\Usecase\Cars\Process;
 
-class UpdateCar {
-    protected $car;
-    protected $repo;
-
-    public function __construct(
-        Entity\Car $car,
-        Repository\CarsData $repo
-    )
-    {
-        $this->car = $car;
-        $this->repo = $repo;
-    }
+class UpdateCar extends ProcessBase{
     public function update_car($id){
         parse_str(file_get_contents("php://input"),$post_vars);
         $model = $post_vars['model'];
